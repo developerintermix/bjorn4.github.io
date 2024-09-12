@@ -21,13 +21,14 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    min-height: 100vh;
+    overflow-y: auto;
 }
 
 
 .card {
     width: 384px;
-    height: 611px;
+    min-height: 611px;
     background-color: var(--Grey-800);  
     border-radius: 10px;
     padding: 40px;
@@ -43,7 +44,6 @@ body {
 
 .card__header {
     margin-top: 24px;
-    padding-inline: 50px;
 }
 
 .header__title {
@@ -56,7 +56,8 @@ body {
     margin-bottom: 24px;
     color: var(--Green);
     font-size: 14px;
-    font-weight: 700;
+    font-weight: 600;
+    line-height: 150%;
 }
 
 
@@ -79,7 +80,7 @@ body {
     height: 45px;
     border: none;
     border-radius: 10px;
-    font-weight: bold;
+    font-weight: 700;
     transition: background-color 1.5s ease, color 0.3s ease-in-out;
 }
 
@@ -97,13 +98,10 @@ body {
 
 @media(max-width:375px) {
     .card{ 
-        position: relative;
-        top: 10%;
         width: 327px;
         min-height: 580px;
         padding-top: 24px;
     }
-
 
 }
 
